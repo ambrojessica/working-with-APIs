@@ -1,31 +1,14 @@
-# Create React App
+# Animal Crossing Art
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+### What is it?
 
-## Deploy Your Own
+  This is a small and easy project I decided to do. I am working with a public API for a game called Animal Crossing. 
 
-Deploy your own Create React App project with Vercel.
+### Purpose:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/create-react-app&template=create-react-app)
+  I wanted a quick refresher on working with API's and also strengthening my skills with bootstrap.
 
-_Live Example: https://create-react-template.vercel.app/_
+### Languages:
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes. You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.
-
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+  ![React](https://img.shields.io/badge/-React-333333?style=flat&logo=react)
+  ![Bootstrap](https://img.shields.io/badge/-Bootstrap-333333?style=flat&logo=bootstrap&logoColor=563D7C)
