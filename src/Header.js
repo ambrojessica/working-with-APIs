@@ -14,7 +14,7 @@ function Header() {
             height="30"
             className="d-inline-block align-top"
           />
-          Animal Crossing Villagers
+          Animal Crossing Art Work
         </Navbar.Brand>
       </Container>
     </Navbar>

@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./Header";
-import Villagers from "./Villagers";
+import axios from "axios";
+import ArtWork from "./components/ArtWork";
 
-function App() {
+const App = () => {
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    const fetchItems = async () => {
+      const result = await axios(`http://acnhapi.com/v1a/art`);
+
+      setItems(result.data);
+    };
+    fetchItems();
+  }, []);
+
   return (
     <div className="App">
       <Header />
-      <Villagers />
+      <ArtWork items={items} />
     </div>
   );
 };
