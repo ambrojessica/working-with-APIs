@@ -1,23 +1,15 @@
 import React from 'react';
 import ac from './images/ac.png';
-import { Navbar, Container } from 'react-bootstrap';
+import './App.css';
 
 function Header() {
   return (
-    <Navbar>
-      <Container>
-        <Navbar.Brand href="#home">
-          <img
-            alt="animal crossing leaf"
-            src={ac}
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-          />
-          Animal Crossing Art Work
-        </Navbar.Brand>
-      </Container>
-    </Navbar>
+    <section>
+      <div className='header-intro'>
+        <img className='header-leaf' src={ac} alt='animal crossing leaf' />
+        <h1>Animal Crossing Art Work</h1>
+      </div>
+    </section>
   );
 }
 
