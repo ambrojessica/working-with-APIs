@@ -11,6 +11,7 @@ const App = () => {
       const result = await axios(`http://acnhapi.com/v1a/art`);
 
       setItems(result.data);
+      console.log(result);
     };
     fetchItems();
   }, []);

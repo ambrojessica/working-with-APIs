@@ -1,16 +1,17 @@
 import React from "react";
+import { CardGroup } from "react-bootstrap";
 import ArtList from './ArtList';
 
 const ArtWork = ({ items }) => {
 
   return (
-    <main>
+    <CardGroup style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center' }}>
       {
         items.map((item) => (
           <ArtList item={item} key={item.id} />
         ))
       }
-    </main>
+    </CardGroup>
 
   );
 };
