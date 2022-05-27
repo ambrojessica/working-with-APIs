@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "./Header";
 import axios from "axios";
-import ArtWork from "./components/ArtWork";
+import DisplayArt from "./components/DisplayArt";
 import Search from './components/Search';
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
 
   useEffect(() => {
     const fetchItems = async () => {
-      const result = await axios(`http://acnhapi.com/v1a/art`);
+      const result = await axios(`http://acnhapi.com/v1a/art?limit=10`);
 
       setItems(result.data);
       // console.log(result);
@@ -19,9 +19,11 @@ const App = () => {
 
   return (
     <div className="App">
+      {/* TODO: add Routing */}
       <Header />
+      {/* TODO: fix search and make it take up the whole screen? */}
       <Search />
-      <ArtWork items={items} />
+      <DisplayArt items={items} />
     </div>
   );
 };
