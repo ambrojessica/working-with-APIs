@@ -1,22 +1,29 @@
 import React from 'react';
-import { Button, Container, Form, FormControl, Nav, Navbar } from 'react-bootstrap';
-import ac from './images/ac.png';
+import { Button, Container, Form, Navbar } from 'react-bootstrap';
 
 function Header() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar className='mt-2'>
       {/* TODO: add image */}
-      <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
-          </Nav>
-        </Navbar.Collapse>
+      <Container>
+        <Navbar.Brand href="#">
+          <img
+            alt='animal crossing leaf'
+            src='https://www.models-resource.com/resources/big_icons/36/35733.png'
+            width='30'
+            height='30'
+            className="d-inline-block align-top"
+          />{' '}
+          Animal Crossing Art Work</Navbar.Brand>
+        <Form className="d-flex">
+          <Form.Control
+            type="search"
+            placeholder="Search"
+            className="me-2"
+            aria-label="Search"
+          />
+          <Button variant="outline-success">🎨</Button>
+        </Form>
       </Container>
     </Navbar>
   );

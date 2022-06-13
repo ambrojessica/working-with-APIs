@@ -1,7 +1,6 @@
 import React from "react";
 import { Alert, Card, Col } from 'react-bootstrap';
 
-// TODO: fix names lol
 const ArtCard = ({ item }) => {
   return (
     <Col md={3} >

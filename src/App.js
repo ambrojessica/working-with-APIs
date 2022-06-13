@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Header from "./Header";
 import axios from "axios";
-import DisplayArt from "./components/DisplayArt";
-import Search from './components/Search';
+import DisplayingArt from "./components/DisplayArt";
+import { Card } from 'react-bootstrap';
+
+// import Search from './components/Search';
 
 const App = () => {
   const [items, setItems] = useState([]);
@@ -21,9 +23,14 @@ const App = () => {
     <div className="App">
       {/* TODO: add Routing */}
       <Header />
-      {/* TODO: fix search and make it take up the whole screen? */}
-      <Search />
-      <DisplayArt items={items} />
+      <Card className="text-center text-white m-5">
+        <Card.Img src="https://images.unsplash.com/photo-1593016250787-edf25b355001?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="Card image" width="95" height="600" />
+        <Card.ImgOverlay>
+          <Card.Title>Art Work</Card.Title>
+        </Card.ImgOverlay>
+      </Card>
+      {/* <Search /> */}
+      <DisplayingArt items={items} />
     </div>
   );
 };

@@ -2,8 +2,7 @@ import React from "react";
 import { Container, Row } from "react-bootstrap";
 import ArtCard from './ArtCard';
 
-// TODO: fix names lol
-const DisplayArt = ({ items }) => {
+const DisplayingArt = ({ items }) => {
 
   return (
     <Container>
@@ -18,7 +17,7 @@ const DisplayArt = ({ items }) => {
   );
 };
 
-export default DisplayArt;
+export default DisplayingArt;
 
 
 // {
